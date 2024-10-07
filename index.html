@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Ana Sol</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuente de Google Fonts para estilizar el texto -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Enlace a Font Awesome para usar iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado fijo con navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#services">Qué Hago</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección "Sobre mí" con el gif centrado de forma más armónica -->
+    <section id="about">
+        <h1>¡Hola, soy Ana Sol!</h1>
+        <div class="about-img">
+            <!-- Gif alineado correctamente -->
+            <img src="https://media.giphy.com/media/bcKmIWkUMCjVm/giphy.gif" alt="Perrito Animado">
+        </div>
+        <p>Soy desarrolladora web apasionada por crear soluciones innovadoras usando tecnologías modernas. 
+           Mi enfoque está en el diseño responsivo y las mejores prácticas de desarrollo.</p>
+    </section>
+
+    <!-- Sección "Qué Hago" con tarjetas de servicios -->
+    <section id="services">
+        <h2>Qué Hago</h2>
+        <div class="service-grid">
+            <!-- Tarjeta de servicio: Desarrollo Web -->
+            <div class="service-card">
+                <i class="fas fa-code"></i>
+                <h3>Desarrollo Web</h3>
+                <p>Construyo sitios web modernos usando HTML, CSS, JavaScript y frameworks como React.</p>
+            </div>
+            <!-- Tarjeta de servicio: Diseño Responsivo -->
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Diseño Responsivo</h3>
+                <p>Me aseguro de que cada página web se vea genial en cualquier dispositivo, desde móviles hasta pantallas grandes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Proyectos" con efectos de hover -->
+    <section id="projects">
+        <h2>Proyectos Recientes</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto.</p>
+            </div>
+            <div class="project-card">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto con icono en el botón de envío -->
+    <section id="contact">
+        <h2>Contáctame</h2>
+        <form action="#" method="post">
+            <!-- Campo Nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <!-- Campo Apellido -->
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br>
+
+            <!-- Campo Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <!-- Campo Teléfono -->
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono"><br>
+
+            <!-- Botón de envío con icono -->
+            <button type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Email: anasolmase@gmail.com</p>
+    </footer>
+
+</body>
+</html>

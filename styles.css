@@ -1,0 +1,276 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9; /* Fondo claro para contraste */
+    color: #333; /* Color de texto */
+    margin: 0; /* Sin márgenes */
+    padding: 0;  /* Sin padding */
+}
+
+/* Estilo para el encabezado fijo */
+header { 
+    background-color:  #ffc8c8; /* Fondo rosa claro */
+    padding: 1rem; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    z-index: 1000; /* Se mantiene por encima del contenido */
+}
+
+/* Lista de navegación */
+nav ul {
+    list-style-type: none; /* Sin viñetas */
+    display: flex; /* Elementos en fila */
+    justify-content: center; /* Centrar elementos */
+    padding: 0;
+    margin: 0;
+}
+
+/* Pseudoclases para enlaces */
+nav ul li a:link {
+    color: #fdc0c0;
+}
+nav ul li a:visited {
+    color: #ffc8c8;
+}
+nav ul li a:hover {
+    color: #ff6b6b;
+}
+nav ul li a:active {
+    color: #e55757;
+}
+
+/* Espaciado entre los elementos de la navegación */
+nav ul li {
+    margin: 0 1rem;
+}
+
+/* Estilo para los enlaces de navegación */
+nav ul li a {
+    padding: .2rem 1rem;
+    text-decoration: none; /* Sin subrayado */
+    color: #fdc0c0; /* Color de texto */
+    background-color: hsla(0, 0%, 100%, .829); /* Fondo claro semitransparente */
+    border: 1px solid #fff; /* Borde blanco */
+    border-radius: 10px; /* Borde redondeado */
+    transition: .4s;  /* Animación de transición */
+}
+
+/* Estilo general para las secciones */
+section {
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+/* Sección "Sobre mí" con imagen */
+#about h1 {
+    font-size: 2.5rem; /* Tamaño del título */
+    margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+/* Centrar el gif dentro de un div */
+.about-img {
+    margin-top: 2rem; /* Margen superior */
+    display: flex;
+    justify-content: center; /* Centrar el contenido */
+}
+
+.about-img img {
+    width: 200px; /* Tamaño del gif */
+    border-radius: 50%; /* Redondeado */
+}
+
+/* Sección "Qué Hago" con tarjetas */
+.service-grid {
+    display: flex;
+    gap: 2rem; /* Espaciado entre tarjetas */
+    justify-content: center; /* Centrar contenido */
+    flex-wrap: wrap; /* Adaptación a pantallas pequeñas */
+}
+
+/* Estilo para las tarjetas de servicios */
+.service-card {
+    background-color: #fff; /* Fondo blanco */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease; /* Animación al pasar el mouse */
+    width: 300px; /* Ancho fijo */
+    text-align: center; /* Centrado del texto */
+}
+
+/* Efecto hover en las tarjetas de servicio */
+.service-card:hover {
+    transform: scale(1.05);  /* Agrandar ligeramente */
+}
+
+/* Estilo para los iconos dentro de las tarjetas */
+.service-card i {
+    font-size: 2.5rem; /* Tamaño del icono */
+    color: #ff6b6b;
+    margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+/* Proyectos recientes */
+#projects .project-grid {
+    display: flex; /* Flexbox para alinear las tarjetas en fila */
+    justify-content: center; /* Centra las tarjetas */
+    gap: 2rem; /* Espaciado entre las tarjetas */
+    flex-wrap: wrap; /* Ajusta en varias filas si es necesario */
+}
+
+.project-card {
+    background-color: #fff; /* Fondo blanco */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease; /* Transición suave en hover */
+    width: 300px; /* Ancho fijo */
+    text-align: center; /* Centrado del texto */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Agrandar ligeramente en hover */
+}
+
+/* Estilo para la cuadrícula de tecnologías */
+.skills-grid {
+    display: flex;
+    gap: 2rem; /* Espaciado entre tarjetas */
+    justify-content: center; /* Centra el contenido */
+    flex-wrap: wrap; /* Ajuste en pantallas pequeñas */
+}
+
+/* Estilo para las tarjetas de tecnologías (similar a las de proyectos) */
+.skills-card {
+    background-color: #fff; /* Fondo blanco */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease; /* Animación suave en hover */
+    width: 300px; /* Ancho fijo */
+    text-align: center; /* Centrado del texto */
+}
+
+.skills-card:hover {
+    transform: scale(1.05); /* Agrandar ligeramente en hover */
+}
+
+
+/* Formulario */
+form input, form button {
+    padding: 1rem; /* Espaciado interno */
+    margin-bottom: 1rem; /* Margen inferior entre los elementos */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 1px solid #ddd; /* Borde gris claro */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 400px; /* Ancho máximo */
+    display: block; /* Elementos en bloque */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+button[type="submit"] {
+    background-color: #ff6b6b; /* Fondo del botón */
+    color: #fff; /* Texto blanco */
+    font-weight: 600; /* Negrita */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+button[type="submit"]:hover {
+    background-color: #e55757; /* Fondo en hover */
+}
+
+button[type="submit"] i {
+    margin-left: 0.5rem; /* Espaciado entre texto e ícono */
+}
+
+/* Pie de página */
+footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 1rem; /* Espaciado interno */
+    text-align: center; /* Centrado del texto */
+    margin-top: 2rem; /* Margen superior */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 1080px) {
+    header nav ul {
+        flex-direction: column; /* Columna para navegación en tabletas horizontales */
+    }
+
+    .service-grid, .project-grid, .skills-grid {
+        flex-direction: column; /* Colocar elementos en columna */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .service-card, .project-card, .skills-card {
+        width: 90%; /* Ancho ajustado en tabletas */
+        max-width: 400px; /* Máximo ancho */
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column; /* Columna para navegación en tabletas verticales */
+    }
+
+    .service-grid, .project-grid, .skills-grid {
+        flex-direction: column; /* Colocar elementos en columna */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .service-card, .project-card, .skills-card {
+        width: 95%; /* Ancho más pequeño en pantallas verticales */
+        max-width: 350px; /* Máximo ancho */
+    }
+
+    /* Ajustar el tamaño de texto */
+    #about h1 {
+        font-size: 2rem; /* Reducir tamaño del título */
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column; /* Columna para navegación en móviles 1 */
+    }
+
+    .service-grid, .project-grid, .skills-grid {
+        flex-direction: column; /* Colocar elementos en columna */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .service-card, .project-card, .skills-card {
+        width: 100%; /* Ocupa el 100% en móviles */
+        max-width: none; /* Sin máximo ancho */
+    }
+
+    /* Ajustar el tamaño de texto */
+    #about h1 {
+        font-size: 1.5rem; /* Reducir tamaño del título */
+    }
+}
+
+@media (max-width: 375px) {
+    header nav ul {
+        flex-direction: column; /* Columna para navegación en móviles 2 */
+    }
+
+    .service-grid, .project-grid, .skills-grid {
+        flex-direction: column; /* Colocar elementos en columna */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .service-card, .project-card, .skills-card {
+        width: 100%; /* Ocupa el 100% en móviles */
+        max-width: none; /* Sin máximo ancho */
+    }
+
+    /* Ajustar el tamaño de texto */
+    #about h1 {
+        font-size: 1.2rem; /* Reducir tamaño del título */
+    }
+}
